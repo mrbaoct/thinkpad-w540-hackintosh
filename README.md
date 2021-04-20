@@ -15,3 +15,4 @@ Clover Bootloader
 
 ## Issue
 - Strong white noise from audio jack when waking up from sleep (reboot solves)
+- If you use Catalina or earlier, wifi will not work. Use https://github.com/win1010525/Airportitlwm-kext instead Airportitlwm.kext
