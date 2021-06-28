@@ -24,7 +24,7 @@
 		<key>#smartUPS</key>
 		<false/>
 		<key>AutoMerge</key>
-		<true/>
+		<false/>
 		<key>DSDT</key>
 		<dict>
 			<key>#Rtc8Allowed</key>
@@ -33,35 +33,6 @@
 			<false/>
 			<key>Debug</key>
 			<false/>
-			<key>DropOEM_DSM</key>
-			<dict>
-				<key>ATI</key>
-				<false/>
-				<key>Firewire</key>
-				<false/>
-				<key>HDA</key>
-				<false/>
-				<key>HDMI</key>
-				<false/>
-				<key>IDE</key>
-				<false/>
-				<key>IntelGFX</key>
-				<false/>
-				<key>LAN</key>
-				<false/>
-				<key>LPC</key>
-				<false/>
-				<key>NVidia</key>
-				<true/>
-				<key>SATA</key>
-				<false/>
-				<key>SmBUS</key>
-				<false/>
-				<key>USB</key>
-				<false/>
-				<key>WIFI</key>
-				<false/>
-			</dict>
 			<key>Fixes</key>
 			<dict>
 				<key>AddDTGP</key>
@@ -71,7 +42,7 @@
 				<key>AddIMEI</key>
 				<false/>
 				<key>AddMCHC</key>
-				<false/>
+				<true/>
 				<key>AddPNLF</key>
 				<true/>
 				<key>DeleteUnused</key>
@@ -81,7 +52,7 @@
 				<key>FixACST</key>
 				<false/>
 				<key>FixADP1</key>
-				<true/>
+				<false/>
 				<key>FixAirport</key>
 				<false/>
 				<key>FixDarwin</key>
@@ -89,7 +60,7 @@
 				<key>FixDarwin7</key>
 				<false/>
 				<key>FixDisplay</key>
-				<true/>
+				<false/>
 				<key>FixFirewire</key>
 				<false/>
 				<key>FixHDA</key>
@@ -105,13 +76,13 @@
 				<key>FixLAN</key>
 				<false/>
 				<key>FixMutex</key>
-				<true/>
+				<false/>
 				<key>FixRTC</key>
 				<true/>
 				<key>FixRegions</key>
 				<false/>
 				<key>FixS3D</key>
-				<true/>
+				<false/>
 				<key>FixSATA</key>
 				<false/>
 				<key>FixSBUS</key>
@@ -121,9 +92,9 @@
 				<key>FixTMR</key>
 				<true/>
 				<key>FixUSB</key>
-				<true/>
+				<false/>
 				<key>FixWAK</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>Name</key>
 			<string>DSDT.aml</string>
@@ -153,34 +124,22 @@
 					<key>Comment</key>
 					<string>change GFX0 to IGPU</string>
 					<key>Disabled</key>
-					<false/>
+					<true/>
 					<key>Find</key>
 					<data>R0ZYMA==</data>
 					<key>Replace</key>
 					<data>SUdQVQ==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change EC0 to EC</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>RUMwXw==</data>
-					<key>Replace</key>
-					<data>RUNfXw==</data>
 				</dict>
 			</array>
 			<key>ReuseFFFF</key>
 			<false/>
 			<key>Rtc8Allowed</key>
 			<false/>
-			<key>SlpSmiAtWake</key>
-			<true/>
 			<key>SuspendOverride</key>
 			<true/>
 		</dict>
 		<key>DisableASPM</key>
-		<true/>
+		<false/>
 		<key>DropTables</key>
 		<array>
 			<dict>
@@ -209,13 +168,13 @@
 			</dict>
 		</array>
 		<key>FixHeaders</key>
-		<true/>
+		<false/>
 		<key>FixMCFG</key>
 		<false/>
 		<key>HaltEnabler</key>
 		<false/>
 		<key>PatchAPIC</key>
-		<true/>
+		<false/>
 		<key>RenameDevices</key>
 		<dict>
 			<key>#_SB.PCI0.RP01.PXSX</key>
@@ -279,7 +238,7 @@
 		<key>#XMPDetection</key>
 		<string>-1</string>
 		<key>Arguments</key>
-		<string>darkwake=0 dart=0 -wegnoegpu</string>
+		<string>-wegnoegpu</string>
 		<key>CustomLogo</key>
 		<string>Alternate</string>
 		<key>Debug</key>
@@ -289,17 +248,17 @@
 		<key>DisableCloverHotkeys</key>
 		<false/>
 		<key>HibernationFixup</key>
-		<true/>
+		<false/>
 		<key>Legacy</key>
 		<string>PBR</string>
 		<key>NeverDoRecovery</key>
 		<false/>
 		<key>NeverHibernate</key>
-		<false/>
+		<true/>
 		<key>NoEarlyProgress</key>
 		<true/>
 		<key>RtcHibernateAware</key>
-		<true/>
+		<false/>
 		<key>SignatureFixup</key>
 		<false/>
 		<key>SkipHibernateTimeout</key>
@@ -309,7 +268,7 @@
 		<key>Timeout</key>
 		<integer>10</integer>
 		<key>XMPDetection</key>
-		<false/>
+		<integer>0</integer>
 	</dict>
 	<key>BootGraphics</key>
 	<dict>
@@ -495,16 +454,11 @@
 			<key>#Inject</key>
 			<string>12</string>
 			<key>AFGLowPowerState</key>
-			<true/>
+			<false/>
 			<key>Inject</key>
-			<integer>28</integer>
+			<string>No</string>
 			<key>ResetHDA</key>
-			<true/>
-		</dict>
-		<key>FakeID</key>
-		<dict>
-			<key>IntelGFX</key>
-			<string>0x4128086</string>
+			<false/>
 		</dict>
 		<key>ForceHPET</key>
 		<false/>
@@ -512,6 +466,10 @@
 		<false/>
 		<key>IntelMaxValue</key>
 		<string>0x0710</string>
+		<key>LANInjection</key>
+		<false/>
+		<key>NoDefaultProperties</key>
+		<false/>
 		<key>Properties</key>
 		<dict>
 			<key>PciRoot(0x0)/Pci(0x1B,0x0)</key>
@@ -539,30 +497,26 @@
 				<string>VGA compatible controller</string>
 				<key>enable-hdmi-dividers-fix</key>
 				<data>AQAAAA==</data>
-				<key>enable-hdmi20</key>
-				<data>AQAAAA==</data>
 				<key>framebuffer-con0-enable</key>
 				<data>AQAAAA==</data>
 				<key>framebuffer-con0-pipe</key>
 				<data>EgAAAA==</data>
-				<key>framebuffer-con0-type</key>
-				<data>AAgAAA==</data>
 				<key>framebuffer-con1-enable</key>
 				<data>AQAAAA==</data>
 				<key>framebuffer-con1-pipe</key>
 				<data>EgAAAA==</data>
-				<key>framebuffer-con1-type</key>
-				<data>AAgAAA==</data>
 				<key>framebuffer-con2-enable</key>
 				<data>AQAAAA==</data>
 				<key>framebuffer-con2-pipe</key>
 				<data>EgAAAA==</data>
 				<key>framebuffer-con2-type</key>
-				<data>AAgAAA==</data>
+				<data>AgAAAA==</data>
+				<key>framebuffer-fbmem</key>
+				<data>AACQAA==</data>
 				<key>framebuffer-patch-enable</key>
 				<data>AQAAAA==</data>
-				<key>framebuffer-unifiedmem</key>
-				<data>AAAAgA==</data>
+				<key>framebuffer-stolenmem</key>
+				<data>AAAwAQ==</data>
 				<key>hda-gfx</key>
 				<string>onboard-1</string>
 				<key>model</key>
@@ -576,9 +530,9 @@
 		<key>USB</key>
 		<dict>
 			<key>AddClockID</key>
-			<true/>
+			<false/>
 			<key>FixOwnership</key>
-			<true/>
+			<false/>
 			<key>HighCurrent</key>
 			<false/>
 			<key>Inject</key>
@@ -733,8 +687,6 @@
 		<string>en-US:0</string>
 		<key>Mouse</key>
 		<dict>
-			<key>DoubleClick</key>
-			<integer>500</integer>
 			<key>Speed</key>
 			<integer>8</integer>
 		</dict>
@@ -830,16 +782,14 @@
 		<key>Inject</key>
 		<dict>
 			<key>Intel</key>
-			<true/>
+			<false/>
 			<key>NVidia</key>
-			<true/>
+			<false/>
 		</dict>
 		<key>LoadVBios</key>
-		<true/>
+		<false/>
 		<key>PatchVBios</key>
 		<false/>
-		<key>ig-platform-id</key>
-		<string>0x0d220003</string>
 	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>
@@ -1143,7 +1093,7 @@
 		<key>BooterConfig</key>
 		<string>0x28</string>
 		<key>CsrActiveConfig</key>
-		<string>0x3E7</string>
+		<string>0x67</string>
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
@@ -1274,6 +1224,8 @@
 		<string>Asset Tag#</string>
 		<key>ChassisManufacturer</key>
 		<string>Apple Inc.</string>
+		<key>ChassisType</key>
+		<string>0xA</string>
 		<key>Family</key>
 		<string>MacBook Pro</string>
 		<key>LocationInChassis</key>
@@ -1298,7 +1250,7 @@
 		<key>#NvidiaWeb</key>
 		<false/>
 		<key>InjectKexts</key>
-		<string>Detect</string>
+		<true/>
 		<key>InjectSystemID</key>
 		<true/>
 	</dict>

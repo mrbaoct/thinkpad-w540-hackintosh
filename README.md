@@ -12,7 +12,10 @@ Clover Bootloader
 - Wireless: Intel Wireless 7260
 - Sound: Realtek ALC292
 
+### Lasted support version: MacOS BigSur 11.2.3 (later version not compatible with this hardware)
+
 
 ## Issue
+- Sleep
 - Strong white noise from audio jack when waking up from sleep (reboot solves)
 - If you use Catalina or earlier, wifi will not work. Use https://github.com/win1010525/Airportitlwm-kext instead Airportitlwm.kext
